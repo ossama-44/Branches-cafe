@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branches Oriental/Contact Us</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="css/Contact.css">
+    <link rel="shortcut icon" href="img/logo.jpg">
+</head>
+<body>
+
+    <div id="Container">
+
+
+        <!-- start: Sidebar Menu -->
+        <div class="sidebar-nav">
+  <a href="Home.html">Home</a>
+  <button class="dropdown-Menu">Quizes
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Quiz.html">1st Quiz</a>
+    <a href="Seconed Quiz.html">2nd Quiz</a>
+    <a href="Third Quiz.html">3rd Quiz</a>
+  </div>
+    <button class="dropdown-Menu">Sliders 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Slider.html">1st Slider</a>
+    <a href="Seconed Slider.html">2nd Slider</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+var dropdown = document.getElementsByClassName("dropdown-Menu");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<!-- end: Sidebar Menu -->
+
+     <header>
+        <div id="header">
+            <a href="Contact Us.html">
+                <img src="img/logo.jpg" alt="logo">
+                <p>
+                   Give Us a feedback !! </p>
+            </a>
+        </div>
+    </header>
+
+    <!-- start: navbar-->
+  <nav>
+        <ul>
+            <li><a href="Home.html" id="li_1">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="Animition.html">Animition</a></li>
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Shopping cart.html">Shopping cart</a></li>
+                    <li><a href="Recipt.html">Recipt</a></li>
+                </ul>
+            </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- End: navbar-->
+
+    <div class="body-1">
+                <div class="contactus">
+            <div class="info">
+                <h2>Conatact Us </h2>
+                <form>
+                    <input type="text" name="name" placeholder="Name">
+
+                      <input type="email" name="email" placeholder="E-mail Address">
+                       <select name="country" id="country">
+                            <option value="Country">Egypt</option>
+                            <option value="Country">Germany</option>
+                            <option value="Country">United Kingdom</option>
+                            <option value="Country">United States</option>
+                            <option value="Country">Saudi Arabia</option>
+                            <option value="Country">France</option>
+                            <option value="Country">Sudan</option>
+                        </select>
+
+                        <input type="tel" name="Phone" placeholder="Your Phone (+20)">
+
+                          <input type="subject" name="subject" placeholder="subject">
+               
+               <textarea name="message" value ="message" placeholder="your feeedback"></textarea> 
+                           
+                </form>
+ <button class="btn" name="Submit" value="Submit"> Submit</button>
+
+            </div>
+<div class="map">
+    <iframe height="400px" width="550px" src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed">
+    </iframe>
+</div>
+        
+
+      </div> 
+
+</div>
+</div>
+             <!-- Start Footer-->
+
+        <div class = "footer">
+
+                <span> copyright  &copy; Osama 
+  </span>
+           
+        </div>
+
+        <!-- End Footer -->
+
+</body>
+</html>

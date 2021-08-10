@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branches Oriental</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="css/Home.css">
+    <link rel="shortcut icon" href="img/logo.jpg">
+</head>
+<body> 
+    <div id="Container">
+
+                <!-- start: Sidebar Menu -->
+        <div class="sidebar-nav">
+  <a href="Home.html">Home</a>
+  <button class="dropdown-Menu">Quizes
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Quiz.html">1st Quiz</a>
+    <a href="Seconed Quiz.html">2nd Quiz</a>
+    <a href="Third Quiz.html">3rd Quiz</a>
+  </div>
+    <button class="dropdown-Menu">Sliders 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Slider.html">1st Slider</a>
+    <a href="Seconed Slider.html">2nd Slider</a>
+  </div>
+</div>
+<script type="text/javascript">
+var dropdown = document.getElementsByClassName("dropdown-Menu");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<!-- end: Sidebar Menu -->
+
+     <header>
+        <div id="header">
+            <a href="Home.html">
+                <img src="img/logo.jpg" alt="logo">
+                <p>
+                    Welcome to Home page</p>
+            </a>
+        </div>
+    </header>
+  <nav>
+        <ul>
+            <li><a href="Home.html" id="li_1">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="Animition.html">Animition</a></li>
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Shopping cart.html">Shopping cart</a></li>
+                    <li><a href="Recipt.html">Recipt</a></li>
+                </ul>
+            </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+        <div class="body">
+        <div>
+            <img src="img/Home/pic1.jpg" alt="img">
+        </div>
+
+
+        <section id="sec_1">
+            
+            <div class="card">
+                <img src="img/Home/pic2.jpg" alt="Chief">
+                <p style="color: #d6b4b4cf;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="card">
+                <img src="img/Home/pic3.jpg" alt="Chief">
+                <p style="color: #d6b4b4cf;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+            <div class="card">
+                <img src="img/Home/pic4.jpg" alt="Chief">
+                <p style="color: #d6b4b4cf;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+    </div>
+        
+            <!-- Start Footer-->
+
+        <div class = "footer">
+
+                <span> copyright  &copy; Osama 
+  </span>
+           
+        </div>
+
+        <!-- End Footer -->
+        </div>
+</body>
+</html>

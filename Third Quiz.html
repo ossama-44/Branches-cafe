@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branches Oriental/Quiz/Quiz 3</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="css/Third Quiz.css">
+    <link rel="shortcut icon" href="img/logo.jpg">
+        <script src="js/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+    <div id="Container">
+
+
+        <!-- start: Sidebar Menu -->
+        <div class="sidebar-nav">
+  <a href="Home.html">Home</a>
+  <button class="dropdown-Menu">Quizes
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Quiz.html">1st Quiz</a>
+    <a href="Seconed Quiz.html">2nd Quiz</a>
+    <a href="Third Quiz.html">3rd Quiz</a>
+  </div>
+    <button class="dropdown-Menu">Sliders 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Slider.html">1st Slider</a>
+    <a href="Seconed Slider.html">2nd Slider</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+var dropdown = document.getElementsByClassName("dropdown-Menu");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<!-- end: Sidebar Menu -->
+
+     <header>
+        <div id="header">
+            <a href="Third Quiz.html">
+                <img src="img/logo.jpg" alt="logo">
+                <p>
+                   Answer the follwing quastions !!</p>
+            </a>
+        </div>
+    </header>
+
+    <!-- start: navbar-->
+  <nav>
+        <ul>
+            <li><a href="Home.html" id="li_1">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="Animition.html">Animition</a></li>
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Shopping cart.html">Shopping cart</a></li>
+                    <li><a href="Recipt.html">Recipt</a></li>
+                </ul>
+            </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- End: navbar-->
+
+
+
+<div class="Phar">
+
+                <div class="Phar_Field" id="Subject_1">How many food item we have ?<span class="span" id="sec_1">+</span></div>
+                <div class="article" id="article_1">
+                    <label for="Answer_1">5</label>
+                    <input type="radio" name="question1" value="5" id="Answer_1">
+                    <label for="Answer_2">7</label>
+                    <input type="radio" name="question1" value="3" id="Answer_2">
+                    <button class="view-btn" id="btn_1">Answer</button>
+
+                 </div>
+                <div class="Phar_Field" id="Subject_2">What is our dilivery number ?<span class="span" id="sec_2">+</span></div>
+                <div class="article" id="article_2">
+                    <label for="Answer_3"> 0101 000 3318</label>
+                    <input type="radio" name="question2" value="10" id="Answer_3">
+                    <label for="Answer_4"> 01555800613</label>
+                    <input type="radio" name="question2" value="3" id="Answer_4">
+                    <button class="view-btn" id="btn_2">Answer</button>
+
+                 </div>
+                <div class="Phar_Field" id="Subject_3">Who is the owner of the resturant ?<span class="span" id="sec_3">+</span></div>
+                <div class="article" id="article_3">
+                    <label for="Answer_5">Osama Hassaneen</label>
+                    <input type="radio" name="question3" value="5" id="Answer_5">
+                    <label for="Answer_6">Abdullrahman Hassan</label>
+                    <input type="radio" name="question3" value="2" id="Answer_6">
+                    <button class="view-btn" id="btn_3">Answer</button>
+
+                 </div>
+
+                <script>
+                    $('#article_1').hide();
+                    $('#article_2').hide();
+                    $('#article_3').hide();
+
+                    $('#Subject_1').click(function () {
+                        if (article_1.style.display === "none") {
+                            $('#article_1').show();
+                            $('#article_2').hide();
+                            $('#article_3').hide();
+                            document.getElementById("sec_1").innerHTML = "-"
+                            document.getElementById("sec_2").innerHTML = "+"
+                            document.getElementById("sec_3").innerHTML = "+"
+
+
+
+                        } else {
+                            $('#article_1').hide();
+                            document.getElementById("sec_1").innerHTML = "+"
+
+                        }
+
+                    });
+                    $('#Subject_2').click(function () {
+                        if (article_2.style.display === "none") {
+                            $('#article_1').hide();
+                            $('#article_2').show();
+                            $('#article_3').hide();
+                            document.getElementById("sec_2").innerHTML = "-"
+                            document.getElementById("sec_1").innerHTML = "+"
+                            document.getElementById("sec_3").innerHTML = "+"
+
+
+
+                        } else {
+                            $('#article_2').hide();
+                            document.getElementById("sec_2").innerHTML = "+"
+
+                        }
+
+                    });
+                    $('#Subject_3').click(function () {
+                        if (article_3.style.display === "none") {
+                            $('#article_1').hide();
+                            $('#article_2').hide();
+                            $('#article_3').show();
+                            document.getElementById("sec_3").innerHTML = "-"
+                            document.getElementById("sec_1").innerHTML = "+"
+                            document.getElementById("sec_2").innerHTML = "+"
+
+
+                        } else {
+                            $('#article_3').hide();
+                            document.getElementById("sec_3").innerHTML = "+"
+                        }
+
+                    });
+
+                    $('#btn_1').on('click', ()=> {
+                        console.log(document.getElementById('Answer_1').checked);
+                        console.log(document.getElementById('Answer_2').checked);
+                        
+                        if(document.getElementById('Answer_1').checked) {
+                            console.log( $('#btn_1'));
+                            btn_1.innerHTML = "Your answer is incorrect !! Try Again"; 
+                        } else if(document.getElementById('Answer_2').checked) {
+                            console.log( $('#btn_1'));
+                            btn_1.innerHTML = "Your answer is correct !!";
+                        }
+                    })
+
+                    $('#btn_2').on('click', ()=> {
+                        console.log(document.getElementById('Answer_3').checked);
+                        console.log(document.getElementById('Answer_4').checked);
+                        
+                        if(document.getElementById('Answer_3').checked) {
+                            console.log( $('#btn_2'));
+                            btn_2.innerHTML = "Your answer is correct !!"; 
+                        } else if(document.getElementById('Answer_4').checked) {
+                            console.log( $('#btn_2'));
+                            btn_2.innerHTML = "Your answer is incorrect !! Try Again";
+                        }
+                    })
+
+                    $('#btn_3').on('click', ()=> {
+                        console.log(document.getElementById('Answer_5').checked);
+                        console.log(document.getElementById('Answer_6').checked);
+                        
+                        if(document.getElementById('Answer_5').checked) {
+                            console.log( $('#btn_3'));
+                            btn_3.innerHTML = "Your answer is correct !!"; 
+                        } else if(document.getElementById('Answer_6').checked) {
+                            console.log( $('#btn_3'));
+                            btn_3.innerHTML = "Your answer is incorrect !! Try Again";
+                        }
+                    })
+
+
+                </script>
+            </div>
+
+
+
+
+
+
+  </div>
+
+             <!-- Start Footer-->
+
+        <div class = "footer">
+
+                <span> copyright  &copy; Osama  
+  </span>
+           
+        </div>
+
+        <!-- End Footer -->
+
+</body>
+</html>

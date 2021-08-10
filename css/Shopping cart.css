@@ -1,0 +1,219 @@
+body {
+  background-color: #382017;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+#Container {
+    width: fit-content;
+    margin: auto;
+    background: #271008;
+    padding-left: 168px;
+    transition: all 0.5s ease;
+}
+#Container header {
+     background-color:black;
+     padding: 20px;
+     overflow: hidden;
+}
+
+#Container header #header a img {
+       width: 100px;
+       float: left;
+}
+
+#Container header #header p {
+       float: right ;
+       color: #ddd;
+       font-size: 31px;
+}
+
+#Container nav {
+      text-align: center;
+}
+#Container nav ul {
+      list-style-type: none;
+      background-color: #461404;
+      overflow: hidden;
+}
+#Container nav ul li {
+      float: left;
+      width: 260px;
+}
+
+#Container nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      border-left: solid white 1px;
+      padding:10px 60px;
+
+}
+#Container nav ul ul {
+     position: absolute;
+     left: -999px;
+     z-index: 1000;
+
+}
+
+#Container nav ul li li {
+     float: none;
+     border-bottom: solid white 1px;
+     border-top: solid white 1px;
+}
+
+#Container nav ul li:hover ul {
+      left: auto;
+}
+
+#Container nav ul li a:hover {
+        color: black;
+        background: white;
+    }
+
+#Container nav ul li #li_1 {
+    border-left: none;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 1px;
+}
+
+
+/*side-navbar*/
+.sidebar-nav {
+  height: 100%;
+  width: 171px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #191e22;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidebar-nav a, .dropdown-Menu {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: bisque;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidebar-nav a:hover, .dropdown-Menu:hover {
+  color: #271008;
+  background-color: #fff;
+}
+
+
+.main {
+  margin-left: 200px; 
+  font-size: 20px; 
+  padding: 0px 10px;
+}
+
+
+.active {
+  background-color: #5a4c47;
+  color: #271008;
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/*End side-navbar*/
+
+
+#Container .body {
+       overflow: hidden;
+       width: 1342px;
+}
+table {
+    background-color: #69534b;
+    width: 1161px;
+    margin-left: 100px;
+    border: 3px solid #827b7b;
+    margin-bottom: 30px;
+    margin-top: 26px;
+
+}
+
+tr {
+    border: 1px solid #000;
+}
+
+th {
+    background-color: #542803;
+    border: 2px solid #000;
+    color: bisque;
+    width: 52px;
+}
+td {
+    border: 1px solid #000;
+    text-align: center;
+}
+
+form {
+    margin-left: 96px;
+    margin-right: 79px;
+    height: 133px;
+    border: solid;
+    margin-bottom: 67px;
+    padding-top: 12px;
+    background-color: #4a1d0e;
+}
+
+
+input, select {
+    width: 270px;
+    height: 20px;
+    margin-left: 10px;
+    color: bisque;
+    background-color: #7b5b51;
+}
+
+.view-btn {
+    width: 120px;
+    margin-left: 523px;
+    height: 61px;
+    border: 3px solid #030303;
+    border-radius: 12px;
+    padding: 13px 19px 19px 19px;
+    outline: none;
+    font-size: 21px;
+    display: block;
+    font-weight: lighter;
+    background-color: #92747c;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #2b140b;
+}
+
+.footer {
+    background-color: #191E22;
+    color: #6A6E71;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}

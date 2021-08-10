@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branches Oriental/Quiz/Quiz 1</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="css/First Quiz.css">
+    <link rel="shortcut icon" href="img/logo.jpg">
+        <script src="js/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+    <div id="Container">
+
+
+        <!-- start: Sidebar Menu -->
+        <div class="sidebar-nav">
+  <a href="Home.html">Home</a>
+  <button class="dropdown-Menu">Quizes
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Quiz.html">1st Quiz</a>
+    <a href="Seconed Quiz.html">2nd Quiz</a>
+    <a href="Third Quiz.html">3rd Quiz</a>
+  </div>
+    <button class="dropdown-Menu">Sliders 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Slider.html">1st Slider</a>
+    <a href="Seconed Slider.html">2nd Slider</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+var dropdown = document.getElementsByClassName("dropdown-Menu");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<!-- end: Sidebar Menu -->
+
+     <header>
+        <div id="header">
+            <a href="First Quiz.html">
+                <img src="img/logo.jpg" alt="logo">
+                <p>
+                   Answer the follwing quastions !! </p>
+            </a>
+        </div>
+    </header>
+
+    <!-- start: navbar-->
+  <nav>
+        <ul>
+            <li><a href="Home.html" id="li_1">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="Animition.html">Animition</a></li>
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Shopping cart.html">Shopping cart</a></li>
+                    <li><a href="Recipt.html">Recipt</a></li>
+                </ul>
+            </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- End: navbar-->
+
+
+
+<div class="Q_A">
+
+<div class="Q_A_Field">
+    <h1 >
+        1) When was our opening date?
+    </h1>
+    <br>
+<button class="view-btn" id="Q_1">2018</button>
+<button class="view-btn" id="Q_2">2019</button>
+
+<div>
+    <button class="Wrong_Ans" id="Ans_1">wrong</button>
+<button class="Right_Ans" id="Ans_2">right</button>
+</div>
+</div>
+<div class="Q_A_Field">
+    <h1 >
+        1) Who is our master cheif?
+    </h1>
+    <br>
+<button class="view-btn" id="Q_3">Walid Omar</button>
+<button class="view-btn" id="Q_4">Osama Hassaneen</button>
+
+<div>
+    <button class="Right_Ans" id="Ans_3">right</button>
+<button class="Wrong_Ans" id="Ans_4">rong</button>
+</div>
+</div>
+<div class="Q_A_Field">
+    <h1 >
+        1) Where Are we ?
+    </h1>
+    <br>
+<button class="view-btn" id="Q_5">Salah Salem St</button>
+<button class="view-btn" id="Q_6">Corneche St</button>
+
+<div>
+    <button class="Wrong_Ans" id="Ans_5">wrong</button>
+<button class="Right_Ans" id="Ans_6">right</button>
+</div>
+</div>
+
+
+    <script>
+        $('#Ans_1').hide();
+        $('#Ans_2').hide();
+        $('#Ans_3').hide();
+        $('#Ans_4').hide();
+        $('#Ans_5').hide();
+        $('#Ans_6').hide();
+        
+        $('#Q_1').click(function () {
+           
+                $('#Ans_1').show();
+            
+
+        });
+        $('#Q_2').click(function () {
+           
+           $('#Ans_2').show();
+       
+
+   });
+   $('#Q_3').click(function () {
+           
+           $('#Ans_3').show();
+       
+
+   });
+   $('#Q_4').click(function () {
+           
+           $('#Ans_4').show();
+       
+
+   });
+   $('#Q_5').click(function () {
+           
+           $('#Ans_5').show();
+       
+
+   });
+   $('#Q_6').click(function () {
+           
+           $('#Ans_6').show();
+       
+
+   });
+
+      
+    </script>
+</div>
+
+
+
+  </div>
+
+             <!-- Start Footer-->
+
+        <div class = "footer">
+
+                <span> copyright  &copy; Osama 
+           
+        </div>
+
+        <!-- End Footer -->
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+body {
+  background-color: #382017;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+#Container {
+    width: fit-content;
+    margin: auto;
+    background: #271008;
+    padding-left: 250px;
+    transition: all 0.5s ease;
+    height: 750px;
+}
+#Container header #header {
+     background-color:black;
+     padding: 20px;
+     overflow: hidden;
+}
+
+#Container header #header a img {
+       width: 100px;
+       float: left;
+}
+
+#Container header #header p {
+       float: right ;
+       color: #ddd;
+       font-size: 31px;
+}
+
+    
+#Container nav {
+      text-align: center;
+}
+#Container nav ul {
+      list-style-type: none;
+      background-color: #461404;
+      overflow: hidden;
+}
+#Container nav ul li {
+      float: left;
+      width: 253px;
+}
+
+#Container nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      border-left: solid white 1px;
+      padding:10px 60px;
+
+}
+#Container nav ul ul {
+     position: absolute;
+     left: -999px;
+     z-index: 1000;
+
+}
+
+#Container nav ul li li {
+     float: none;
+     border-bottom: solid white 1px;
+     border-top: solid white 1px;
+}
+
+#Container nav ul li:hover ul {
+      left: auto;
+}
+
+#Container nav ul li a:hover {
+        color: black;
+        background: white;
+    }
+
+#Container nav ul li #li_1 {
+    border-left: none;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 10px 1px;
+}
+
+
+/*side-navbar*/
+.sidebar-nav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #191e22;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidebar-nav a, .dropdown-Menu {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: bisque;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidebar-nav a:hover, .dropdown-Menu:hover {
+  color: #271008;
+  background-color: #fff;
+}
+
+
+.main {
+  margin-left: 200px; 
+  font-size: 20px; 
+  padding: 0px 10px;
+}
+
+
+.active {
+  background-color: #5a4c47;
+  color: #271008;
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/*End side-navbar*/
+
+
+.Phar {
+
+    background-color: #38261f;
+    padding: 50px;
+    height: 481px;
+}
+
+.Phar_Field {
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: #250e07;
+    color: bisque;
+    width: 442px;
+    height: 49px;
+    border-top: solid;
+    border-bottom: solid;
+    border-bottom-width: initial;
+    border-bottom-style: solid;
+    border-bottom-color: initial;
+    padding-top: 27px;
+}  
+.span {
+            float: right;
+            font-size: larger;
+        }
+
+.article {
+    width: 403px;
+    padding: 20px;
+    background-color: black;
+    margin-left: 407px;
+    color: bisque;
+    margin-top: 0px;
+    margin-bottom: 0px;
+        }
+
+.footer {
+    background-color: #191E22;
+    color: #6A6E71;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}

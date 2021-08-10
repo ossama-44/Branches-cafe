@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branches Oriental/Quiz/Quiz 2</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="css/Seconed Quiz.css">
+    <link rel="shortcut icon" href="img/logo.jpg">
+        <script src="js/jquery-3.5.1.js"></script>
+</head>
+<body>
+
+    <div id="Container">
+
+
+        <!-- start: Sidebar Menu -->
+        <div class="sidebar-nav">
+  <a href="Home.html">Home</a>
+  <button class="dropdown-Menu">Quizes
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Quiz.html">1st Quiz</a>
+    <a href="Seconed Quiz.html">2nd Quiz</a>
+    <a href="Third Quiz.html">3rd Quiz</a>
+  </div>
+    <button class="dropdown-Menu">Sliders 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Slider.html">1st Slider</a>
+    <a href="Seconed Slider.html">2nd Slider</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+var dropdown = document.getElementsByClassName("dropdown-Menu");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<!-- end: Sidebar Menu -->
+
+     <header>
+        <div id="header">
+            <a href="Seconed Quiz.html">
+                <img src="img/logo.jpg" alt="logo">
+                <p>
+                   Answer the follwing quastions !! </p>
+            </a>
+        </div>
+    </header>
+
+    <!-- start: navbar-->
+  <nav>
+        <ul>
+            <li><a href="Home.html" id="li_1">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="Animition.html">Animition</a></li>
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Shopping cart.html">Shopping cart</a></li>
+                    <li><a href="Recipt.html">Recipt</a></li>
+                </ul>
+            </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+<!-- End: navbar-->
+
+
+
+<div class="Phar">
+
+                <div class="Phar_Field" id="Subject_1">HTML<span class="span" id="sec_1">+</span></div>
+                <p class="article" id="article_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="Phar_Field" id="Subject_2">PHP<span class="span" id="sec_2">+</span></div>
+                <p class="article" id="article_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="Phar_Field" id="Subject_3">ASP.NET<span class="span" id="sec_3">+</span></div>
+                <p class="article" id="article_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <script>
+                    $('#article_1').hide();
+                    $('#article_2').hide();
+                    $('#article_3').hide();
+
+                    $('#Subject_1').click(function () {
+                        if (article_1.style.display === "none") {
+                            $('#article_1').show();
+                            $('#article_2').hide();
+                            $('#article_3').hide();
+                            document.getElementById("sec_1").innerHTML = "-"
+                            document.getElementById("sec_2").innerHTML = "+"
+                            document.getElementById("sec_3").innerHTML = "+"
+
+
+
+                        } else {
+                            $('#article_1').hide();
+                            document.getElementById("sec_1").innerHTML = "+"
+
+                        }
+
+                    });
+                    $('#Subject_2').click(function () {
+                        if (article_2.style.display === "none") {
+                            $('#article_1').hide();
+                            $('#article_2').show();
+                            $('#article_3').hide();
+                            document.getElementById("sec_2").innerHTML = "-"
+                            document.getElementById("sec_1").innerHTML = "+"
+                            document.getElementById("sec_3").innerHTML = "+"
+
+
+
+                        } else {
+                            $('#article_2').hide();
+                            document.getElementById("sec_2").innerHTML = "+"
+
+                        }
+
+                    });
+                    $('#Subject_3').click(function () {
+                        if (article_3.style.display === "none") {
+                            $('#article_1').hide();
+                            $('#article_2').hide();
+                            $('#article_3').show();
+                            document.getElementById("sec_3").innerHTML = "-"
+                            document.getElementById("sec_1").innerHTML = "+"
+                            document.getElementById("sec_2").innerHTML = "+"
+
+
+                        } else {
+                            $('#article_3').hide();
+                            document.getElementById("sec_3").innerHTML = "+"
+                        }
+
+                    });
+                </script>
+            </div>
+
+
+
+
+
+
+  </div>
+
+             <!-- Start Footer-->
+
+        <div class = "footer">
+
+                <span> copyright  &copy; Osama  
+  </span>
+           
+        </div>
+
+        <!-- End Footer -->
+
+</body>
+</html>

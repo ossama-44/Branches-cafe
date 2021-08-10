@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branches Oriental/Products</title>
+    <meta charset="utf8">
+    <link rel="shortcut icon" href="img/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="css/Shopping cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div id="Container">
+
+                <!-- start: Sidebar Menu -->
+        <div class="sidebar-nav">
+  <a href="Home.html">Home</a>
+  <button class="dropdown-Menu">Quizes
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Quiz.html">1st Quiz</a>
+    <a href="Seconed Quiz.html">2nd Quiz</a>
+    <a href="Third Quiz.html">3rd Quiz</a>
+  </div>
+    <button class="dropdown-Menu">Sliders 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="First Slider.html">1st Slider</a>
+    <a href="Seconed Slider.html">2nd Slider</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+var dropdown = document.getElementsByClassName("dropdown-Menu");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<!-- end: Sidebar Menu -->
+
+     <header>
+        <div id="header">
+            <a href="Shopping cart.html">
+                <img src="img/logo.jpg" alt="logo">
+                <p>
+                     Shopping cart</p>
+            </a>
+        </div>
+    </header>
+  <nav>
+        <ul>
+            <li><a href="Home.html" id="li_1">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="Animition.html">Animition</a></li>
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Shopping cart.html">Shopping cart</a></li>
+                    <li><a href="Recipt.html">Recipt</a></li>
+                </ul>
+            </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="body">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ser</th>
+                    <th>Customer Name</th>
+                    <th>Product</th>
+                    <th>Quentity</th>
+                </tr>
+            </thead>
+            <tbody id="t_body">
+                
+            </tbody>
+        </table>
+
+        <form id="form_2">
+            <input type="number" name="number">
+            <input type="text" name="text">
+            <select name="prod">
+                <option value="Pizza">Pizza</option>
+                <option value="Sandwitches">Sandwitches</option>
+                <option value="Hot Drinks">Hot Drinks</option>
+                <option value="Freesh Drinks">Freesh Drinks</option>
+                <option value="Desert">Desert</option>
+            </select>
+            <input type="number" name="num">
+            <button class="view-btn" onclick="insert(event)">Insert</button>
+        </form>
+    </div>
+
+
+            <!-- Start Footer-->
+
+        <div class = "footer">
+
+                <span> copyright  &copy; Osama 
+  </span>
+           
+        </div>
+
+        <!-- End Footer -->
+        </div>
+<script src="JS/shop.js"></script>
+</body>
+</html>
